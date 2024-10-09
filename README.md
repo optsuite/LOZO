@@ -1,12 +1,11 @@
 # LOZO: Enhancing Zeroth-order fine-tuning for language models with low-rank structures
 
 This is the implementation for the paper **Enhancing Zeroth-order fine-tuning for language models with low-rank structures**. 
-In this paper we propose a low-rank ZO gradient estimator and introduce a novel low-rank ZO algorithm (LOZO) that effectively captures this structure in LLMs. 
-
-By leveraging the low-rank structure of gradients, our method incorporates the momentum technique with negligible memory overhead. Moreover, it achieves faster convergence and delivers superior performance across a range of tasks and model scales.
 
 
+In this paper, we design a low-rank gradient estimator for the zeroth-order (ZO) method and propose a novel low-rank ZO-SGD (LOZO) algorithm for fine-tuning large language models (LLMs). Additionally, we introduce an approach to combine our LOZO algorithm with the momentum technique, resulting in the low-rank ZO-SGD with momentum (LOZO-M) algorithm, which incurs almost no additional memory overhead compared to the LOZO algorithm.
 
+Compared to existing ZO methods for LLM fine-tuning, such as [MeZO](https://arxiv.org/pdf/2305.17333.pdf), the LOZO and LOZO-M algorithms achieve superior performance across a range of tasks and model scales, along with faster convergence rates.
 
 <p>
   <img src="./assets/memory_and_k16.png?raw=true" alt="Fig" width="100%"/>
@@ -18,7 +17,7 @@ By leveraging the low-rank structure of gradients, our method incorporates the m
 <p>
   <img src="./assets/combined_loss_vs_epochs.png?raw=true" alt="Fig" width="100%"/>
   <em>
-  Left: Loss curves of OPT-13B on SQuAD dataset. Middle: Loss curves of OPT-30B on SST-2 dataset. Right: Loss curves of OPT-66B on WIC dataset. LOZO consistently yields faster convergence speed comapred to the baselines.
+  Left: Loss curves of OPT-13B on SQuAD dataset. Middle: Loss curves of OPT-30B on SST-2 dataset. Right: Loss curves of OPT-66B on WIC dataset. LOZO consistently yields faster convergence speed comapred to the baseline.
   </em>
 </p>
 
@@ -30,7 +29,7 @@ For reproducing RoBERTa-large experiments, please refer to the [medium_models](h
 
 ## Bugs or questions?
 
-If you have any questions related to the code or the paper, feel free to email Yiming Chen (`abcdcym@gmail.com`) or Yuan Zhang (`zy1002@stu.pku.edu.cn`). If you encounter any problems when using the code, or want to report a bug, you can open an issue. Please try to specify the problem with details so we can help you better and quicker!
+If you have any questions related to the code or the paper, feel free to email Yiming Chen (`abcdcym@gmail.com`) or Yuan Zhang (`zy1002@stu.pku.edu.cn`). If you encounter any problems when using the code, or want to report a bug, you can open an issue. Please provide specific details about the problem so that we can assist you more effectively and efficiently!
 
 
 
