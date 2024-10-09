@@ -1,8 +1,7 @@
 # LOZO: Enhancing Zeroth-order fine-tuning for language models with low-rank structures
 
 This is the implementation for the paper **Enhancing Zeroth-order fine-tuning for language models with low-rank structures**. 
-In this paper we propose a low-rank ZO gradient estimator and introduce a novel low-
-rank ZO algorithm (LOZO) that effectively captures this structure in LLMs. 
+In this paper we propose a low-rank ZO gradient estimator and introduce a novel low-rank ZO algorithm (LOZO) that effectively captures this structure in LLMs. 
 
 By leveraging the low-rank structure of gradients, our method incorporates the momentum technique with negligible memory overhead. Moreover, it achieves faster convergence and delivers superior performance across a range of tasks and model scales.
 
