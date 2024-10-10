@@ -1,6 +1,6 @@
 # LOZO on Medium-sized Masked Language Models
 
-This part of the code is for LOZO experiments on RoBERTa-large. It is based on [LM-Kernel-FT](https://github.com/princeton-nlp/LM-Kernel-FT), [LM-BFF](https://github.com/princeton-nlp/LM-BFF) and [MeZO](https://arxiv.org/pdf/2305.17333.pdf). We add new files: `run_lozo.py`, `lozo.sh`, `src/LOZOtrainer.py` and `run_fewshot_lozo.sh`. These files support the replication of our experiments.
+This part of the code is for LOZO experiments on RoBERTa-large. It is based on [LM-Kernel-FT](https://github.com/princeton-nlp/LM-Kernel-FT), [LM-BFF](https://github.com/princeton-nlp/LM-BFF) and [MeZO](https://github.com/princeton-nlp/MeZO). We add new files: `run_lozo.py`, `lozo.sh`, `src/LOZOtrainer.py` and `run_fewshot_lozo.sh`. These files support the replication of our experiments.
 
 
 ## Installation

@@ -5,7 +5,7 @@ This is the implementation for the paper **Enhancing Zeroth-order fine-tuning fo
 
 In this paper, we design a low-rank gradient estimator for the zeroth-order (ZO) method and propose a novel low-rank ZO-SGD (LOZO) algorithm for fine-tuning large language models (LLMs). Additionally, we introduce an approach to combine our LOZO algorithm with the momentum technique, resulting in the low-rank ZO-SGD with momentum (LOZO-M) algorithm, which incurs almost no additional memory overhead compared to the LOZO algorithm.
 
-Compared to existing ZO methods for LLM fine-tuning, such as [MeZO](https://arxiv.org/pdf/2305.17333.pdf), the LOZO and LOZO-M algorithms achieve superior performance across a range of tasks and model scales, along with faster convergence rates.
+Compared to existing ZO methods for LLM fine-tuning, such as [MeZO](https://github.com/princeton-nlp/MeZO), the LOZO and LOZO-M algorithms achieve superior performance across a range of tasks and model scales, along with faster convergence rates.
 
 <p>
   <img src="./assets/memory_and_k16.png?raw=true" alt="Fig" width="100%"/>

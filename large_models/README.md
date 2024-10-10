@@ -1,6 +1,6 @@
 # LOZO on Large Autoregressive Language Models
 
-This part of the code is for LOZO experiments on large autoregressive language models, based on [MeZO](https://arxiv.org/pdf/2305.17333.pdf). To avoid interfering with the existing code and to improve clarity, we add three new files: `run_lozo.py`, `lozo.sh`, and `LOZOtrainer.py`. These files support the replication of our experiments.
+This part of the code is for LOZO experiments on large autoregressive language models, based on [MeZO](https://github.com/princeton-nlp/MeZO). To avoid interfering with the existing code and to improve clarity, we add three new files: `run_lozo.py`, `lozo.sh`, and `LOZOtrainer.py`. These files support the replication of our experiments.
 
 ## Installation
 
