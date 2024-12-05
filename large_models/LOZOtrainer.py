@@ -525,7 +525,7 @@ class LowRankTrainer(Trainer):
                     self.control = self.callback_handler.on_step_begin(args, self.state, self.control)
 
                 # MeZO added: estimate gradient
-                if args.trainer == "lowrank_zo":
+                if args.trainer == "LOZO":
                     tr_loss_step = self.lowrank_zo_step(model, inputs)
                 else:
                     if (
@@ -561,7 +561,7 @@ class LowRankTrainer(Trainer):
                     and (step + 1) == steps_in_epoch
                 ):
                     # MeZO added: update model with the estimated gradient
-                    if args.trainer == "lowrank_zo":
+                    if args.trainer == "LOZO":
                         self.lowrank_zo_update()
                     else:
                         # Gradient clipping
